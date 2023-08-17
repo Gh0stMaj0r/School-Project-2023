@@ -1,0 +1,358 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/CSS.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--Animaatioiden CSS-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"> <!--Voit käyttää bootstrap ikoneita-->
+<link rel="icon" href="kuvat/palette.svg">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kotkantien maalaus- ja tapetointi</title>
+</head>
+
+<body>
+		<div class="header">
+			<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#06A18C" class="bi bi-palette" viewBox="0 0 16 16">
+				<path d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+				<path d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z"/>
+			  </svg>
+			  <div class="header-teksti">
+			<h1>Kotkantien maalaus- ja tapetointi</h1>
+			<span id="quote">-Teemme kodistasi kauniin!-</span>
+		</div>
+		</div>
+	<!--------------------------------------------->
+	<!--Navigaatio-->
+		<div class="navbar" id="navbar">
+	  <div class="navbar-right">
+		<a href="#palvelut">Palvelut</a>
+		<a href="#suunnittelu">Suunnittelu</a>
+		<a href="#galleria">Galleria</a>
+		<a href="#yhteystiedot">Yhteystiedot</a>
+	  </div>
+	</div>
+	<!--------------------------------------------->
+	<!--Etusivu-->
+	<div id="etusivu">
+		<div id="tietoa" data-aos="zoom-in-right">
+		<h2 id="Otsikko">Maalaus- ja tapetointi palvelut Oulussa</h2>
+		<p id="aloitusteksti">Olemme vastaperustettu maalaus- ja tapetointi alan yritys. 
+			Yrityksemme on perheyritys, joka koostuu alan ammatilaisista.
+			Yrityksemme perustuu siihen että palvelemme asiakkaitamme rautaisella
+			ammattitaidolla, kuuntelemme asiakkaiden toiveet ja toimimme niiden mukaan.
+			Ota rohkeasti yhteyttä ja tilaa maksuton suunnittelukartoitus.</p>
+			<button onclick="yhteys()" class="etusivun-button">Ota Yhteyttä!</button>
+		</div>
+		<div class="etusivu-kuva" data-aos="zoom-in-left">
+			<img src="kuvat/kuva1.png" alt="Kuva1">
+		</div>
+	</div>
+	<!--------------------------------------------->
+	<!--suunnittelukartoitus-->
+	<div class="kartoitus">
+		<h3>Tilaa ilmainen suunnittelukartoitus:</h3>
+		<div class="kartoitus2">
+		<input type="email" id="email" class="email" placeholder="Email*">
+		<button onclick="tarkistus()" class="tilaa">Tilaa</button>
+		</div>
+	</div><br>
+	<!--------------------------------------------->
+	<!--Palvelut/cards 1-->
+	<div class="palvelut1">
+		<div class="card" data-aos="flip-left">
+  			<img src="kuvat/Maalaus.jpg" alt="Avatar" class="cardkuvat" style="width:100%">
+  		<div class="container">
+    		<h4><b>Maalaus</b></h4> 
+    		<p>Yrityksen maalauspalvelut tarjoavat laadukkaan maalaustyön sisä- ja ulkotiloihin. 
+				Työ tehdään erilaisille pinnoille ja materiaaleille. ¨
+				Ammattitaitoiset maalarit takaavat asiakkaan toiveiden mukaisen lopputuloksen.</p>
+			<button onclick="maalaus()" class="nappi">Lue lisää...</button>
+  		</div>
+	</div>
+	<!--card1 loppuu-->
+			<div class="card" data-aos="flip-left">
+  			<img src="kuvat/tapetointi.jpg" alt="Avatar" class="cardkuvat" style="width:100%">
+  		<div class="container">
+    		<h4><b>Tapetointi</b></h4> 
+    		<p>Yrityksen tapetoinnit tarjoavat asiakkaille ammattitaitoisen ja laadukkaan tapetoinnin erilaisiin tiloihin. 
+				Työ sisältää tapetoinnin ja tarvittaessa myös alustan valmistelun. 
+				Ammattitaitoiset tapetoijat takaavat lopputuloksen olevan täysin asiakkaan toiveiden mukaisen.</p>
+			<button onclick="tapetointi()" class="nappi">Lue lisää...</button>
+  		</div>
+	</div>
+	<!--card2 loppuu-->
+			<div class="card" data-aos="flip-left">
+  			<img src="kuvat/Väripaletti.jpg" alt="Avatar" class="cardkuvat" style="width:100%">
+  		<div class="container">
+    		<h4><b>Värisuunnittelu</b></h4>
+    		<p>Värisuunnittelu-työkalumme on helppokäyttöinen ja intuitiivinen. Sen avulla asiakas voi suunnitella ja esikatsella värimaailmoja ja sävyjä eri tilanteisiin ja projekteihin. 
+				Työkalu tarjoaa laajan valikoiman värejä ja mahdollistaa erilaisten väriyhdistelmien luomisen</p> 
+			<button onclick="paletti()" class="nappi">Lue lisää...</button>
+  		</div>
+	</div>
+	<!--card3 loppuu-->
+	</div>
+	<!--------------------------------------------->
+	<!--Palvelut2-->
+	<div class="maalausjatapetti" id="palvelut">¨
+		<div class="maalauspalvelu" data-aos="fade-right">
+			<h2 class="potsikot">Maalauspalvelut</h2>
+			<div class="palveluteksti">
+			<p class="mteksti">Yrityksemme tarjoaa laadukkaita maalauspalveluja asiakkailleen. 
+				Työt tehdään ammattitaitoisilla maalareilla ja tarvittaessa käytetään parhaita maalien ja tarvikkeiden merkkejä. 
+				Meille tärkeintä on asiakkaan tyytyväisyys lopputulokseen, joten varmistamme että jokainen yksityiskohta on huolellisesti hoidettu. 
+				Ota yhteyttä ja varaa maalauspalvelumme tänään!</p>
+				<img src="kuvat/Maalaus.jpg" class="galleria-kuvat">
+			</div>
+		</div>
+		<div class="tapetointipalvelu" id="palvelut2" data-aos="fade-left">
+			<h2 class="potsikot">Tapetointipalvelut</h2>
+			<div class="palveluteksti">
+			<p class="mteksti">Yrityksemme tarjoaa laadukkaita tapetointipalveluja asiakkaille. 
+				Työt tehdään ammattitaitoisilla tapetoijilla ja tarvittaessa käytetään parhaita tapetteja ja tarvikkeita. 
+				Meille tärkeintä on asiakkaan tyytyväisyys lopputulokseen, joten varmistamme että jokainen yksityiskohta on huolellisesti hoidettu. 
+				Ota yhteyttä ja varaa tapetointipalvelumme tänään!</p>
+				<img src="kuvat/Tapetointi2.jpg" class="galleria-kuvat">
+			</div>
+		</div>
+	</div>
+	<!--------------------------------------------->
+	<!--Ota yhteyttä lomake-->
+	<div class="center" id="yhteys">
+	<div class="container1" data-aos="flip-down">
+		<h2 style="text-align: left;">Ota yhteyttä!</h2>
+		<p>Onko sinulla kysyttävää, vai haluatko antaa palautetta?</p>
+		<p>Voit ottaa meihin yhteyttä täyttämällä alla olevan lomakkeen.
+			Palaamme asiaan niin pian kuin mahdollista.</p>
+		<p>Tähdellä [*] merkityt kentät ovat pakollisia.</p>
+		<form>
+		  <label for="nimi">Nimi</label>
+		  <input type="text" id="nimi" name="kokonimi" placeholder="Kokonimi*">
+
+		  <label for="sposti">Sähköposti</label>
+		  <input type="text" id="sposti" name="sähköposti" placeholder="esimerkki@gmail.com*">
+
+		  <label for="numero">Puhelinnumero</label>
+		  <input type="text" id="numero" name="puhelinnumero" placeholder="040-4678840*">
+	  
+		  <label for="yhteydenotto">Yhteydenotto</label>
+		  <select id="yhteydenotto" name="yhteydenotto">
+			<option value="halukkuus">Valitse yhteydenotto tapa...</option>
+			<option value="sposti1">Sähköpostilla</option>
+			<option value="puhelin">Soittamalla</option>
+			<option value="enhalua">En halua yhteydenottoa, kiitos!</option>
+		  </select>
+	  
+		  <label for="aihe">Aihe</label>
+		  <textarea id="aihe" name="aihe" placeholder="Viesti*" style="height:200px"></textarea>
+	  
+		  <input onclick="laheta(); return false;" type="submit" value="Lähetä">
+		</form>
+	  </div>
+	  </div>
+	<!--------------------------------------------->
+	<!--Värisuunnittelu-->
+	<div class="suunnittelutyökalu center1" id="suunnittelu">
+		<h2>Värisuunnittelu</h2>
+		<div class="center1">
+		<p style="padding: 20px" class="steksti">Tässä on meidän kehittämä suunnittelutyökalu, jolla voit itse suunnitella tulevan kohteesi värimaailmaa.
+			Työkalussa on monia eri värivaihtoehtoja, joilla voit luoda erilaisia väriyhdistelmiä.
+			Voit itse suunnitella kohteeseesi juuri sellaisen värimaailman kuin haluat.</p>
+		</div>
+		<div class="flex-row">
+	<!--------------------------------------------->
+	<div class="värisuunnittelu" data-aos="fade-down-left"> <!--Vasemman seinän värisuunnittelu-->
+		<h5>Vasen seinä:</h5>
+		<div id="nappiValikko1" class="row">
+			<div class="värinapit">
+				<button class="colorbutton" onclick="callVasen('#DD4132'); show(this)" id="Fiesta" style="background-color: #DD4132;"></button>
+				<button class="colorbutton" onclick="callVasen('#9E1030'); show(this)" id="JesterRed" style="background-color: #9E1030;"></button>
+			</div>
+		</div>
+		<div id="nappiValikko2" class="row"></div>
+		<div class="värinapit">
+			<button class="colorbutton" onclick="callVasen('#FE840E'); show(this)" id="Tumeric" style="background-color: #FE840E;"></button>
+			<button class="colorbutton" onclick="callVasen('#FF6F61'); show(this)" id="LivingCoral" style="background-color: #FF6F61;"></button>
+		</div>
+		<div id="nappiValikko3" class="row"></div>
+		<div class="värinapit">
+			<button class="colorbutton" onclick="callVasen('#C62168'); show(this)" id="PinkPeacock" style="background-color: #C62168;"></button>
+			<button class="colorbutton" onclick="callVasen('#8D9440'); show(this)" id="PepperStem" style="background-color: #8D9440;"></button>
+		</div>
+		<div id="nappiValikko4" class="row"></div>
+		<div class="värinapit">
+			<button class="colorbutton" onclick="callVasen('#FFD662'); show(this)" id="AspenGold" style="background-color: #FFD662;"></button>
+			<button class="colorbutton" onclick="callVasen('#00539C'); show(this)" id="PrincessBlue" style="background-color: #00539C;"></button>
+		</div>
+		<div id="nappiValikko5" class="row"></div>
+		<div class="värinapit">
+			<button class="colorbutton" onclick="callVasen('#755139'); show(this)" id="Toffee" style="background-color: #755139;"></button>
+			<button class="colorbutton" onclick="callVasen('#D69C2F'); show(this)" id="MangoMojito" style="background-color: #D69C2F;"></button>
+		</div>
+		<div id="nappiValikko6" class="row"></div>
+		<div class="värinapit">
+			<button class="colorbutton" onclick="callVasen('#616247'); show(this)" id="TerrariumMoss" style="background-color: #616247;"></button>
+			<button class="colorbutton" onclick="callVasen('#E8B5CE'); show(this)" id="SweetLilac" style="background-color: #E8B5CE;"></button>
+		</div>
+		<div id="nappiValikko7" class="row"></div>
+		<div class="värinapit">
+			<button class="colorbutton" onclick="callVasen('#D2C29D'); show(this)" id="SoyBean" style="background-color: #D2C29D;"></button>
+			<button class="colorbutton" onclick="callVasen('#343148'); show(this)" id="Eclipse" style="background-color: #343148;"></button>
+		</div>
+		<div id="nappiValikko8" class="row"></div>
+		<div class="värinapit">
+			<button class="colorbutton" onclick="callVasen('#F0EAD6'); show(this)" id="SweetCorn" style="background-color: #F0EAD6;"></button>
+			<button class="colorbutton" onclick="callVasen('#615550'); show(this)" id="BrownGranite" style="background-color: #615550;"></button>
+		</div>
+			<h5>Valitsemasi värin nimi:</h5><br>
+			<span class="text-center" id="demo1"></span>
+		</div><br><br>
+	  <!--SVG-->
+	  <div data-aos="zoom-in">
+	  <svg xmlns="http://www.w3.org/2000/svg" class="room" width="350" height="350" viewBox="0 0 1619.992 1082.634">
+		<path id="vasenSeina" data-name="Path 1" d="M179,924.072,961.419,711.727V221.948L394.811-2.134H179.266Z" transform="translate(-178.5 2.634)" fill="#ffffff" stroke="#707070" stroke-width="1"></path>
+		<path id="oikeaSeina" data-name="Path 2" d="M961.419,710.66l835.506,144.053V9.6L961.419,223.015Z" transform="translate(-178.5 2.634)" fill="#ffffff" stroke="#707070" stroke-width="1"></path>
+		<path id="katto" data-name="Path 3" d="M398.06-2.134H1797.991v6.8L959.284,221.948Z" transform="translate(-178.5 2.634)" fill="#edebeb" stroke="#707070" stroke-width="1"></path>
+		<path id="lattia" data-name="Path 4" d="M179,1080V923L961.419,711.727l836.573,142.986V1080" transform="translate(-178.5 2.634)" fill="#919090" stroke="#707070" stroke-width="1"></path>
+	</svg></div><br><br>
+	<!--------------------------------------------->
+	<div class="värisuunnittelu1" data-aos="fade-down-right"> <!--Oikean seinän värisuunnittelu-->
+		<h5>Oikea seinä:</h5>
+		<div id="nappiValikko9" class="row">
+			<div class="värinapit">
+				<button class="colorbutton" onclick="callOikea('#DD4132'); show2(this)" id="Fiesta" style="background-color: #DD4132;"></button>
+				<button class="colorbutton" onclick="callOikea('#9E1030'); show2(this)" id="JesterRed" style="background-color: #9E1030;"></button>
+			</div>
+		</div>
+		<div id="nappiValikko10" class="row"></div>
+		<div class="värinapit">
+			<button class="colorbutton" onclick="callOikea('#FE840E'); show2(this)" id="Tumeric" style="background-color: #FE840E;"></button>
+			<button class="colorbutton" onclick="callOikea('#FF6F61'); show2(this)" id="LivingCoral" style="background-color: #FF6F61;"></button>
+		</div>
+		<div id="nappiValikko11" class="row"></div>
+		<div class="värinapit">
+			<button class="colorbutton" onclick="callOikea('#C62168'); show2(this)" id="PinkPeacock" style="background-color: #C62168;"></button>
+			<button class="colorbutton" onclick="callOikea('#8D9440'); show2(this)" id="PepperStem" style="background-color: #8D9440;"></button>
+		</div>
+		<div id="nappiValikko12" class="row"></div>
+		<div class="värinapit">
+			<button class="colorbutton" onclick="callOikea('#FFD662'); show2(this)" id="AspenGold" style="background-color: #FFD662;"></button>
+			<button class="colorbutton" onclick="callOikea('#00539C'); show2(this)" id="PrincessBlue" style="background-color: #00539C;"></button>
+		</div>
+		<div id="nappiValikko13" class="row"></div>
+		<div class="värinapit">
+			<button class="colorbutton" onclick="callOikea('#755139'); show2(this)" id="Toffee" style="background-color: #755139;"></button>
+			<button class="colorbutton" onclick="callOikea('#D69C2F'); show2(this)" id="MangoMojito" style="background-color: #D69C2F;"></button>
+		</div>
+		<div id="nappiValikko14" class="row"></div>
+		<div class="värinapit">
+			<button class="colorbutton" onclick="callOikea('#616247'); show2(this)" id="TerrariumMoss" style="background-color: #616247;"></button>
+			<button class="colorbutton" onclick="callOikea('#E8B5CE'); show2(this)" id="SweetLilac" style="background-color: #E8B5CE;"></button>
+		</div>
+		<div id="nappiValikko15" class="row"></div>
+		<div class="värinapit">
+			<button class="colorbutton" onclick="callOikea('#D2C29D'); show2(this)" id="SoyBean" style="background-color: #D2C29D;"></button>
+			<button class="colorbutton" onclick="callOikea('#343148'); show2(this)" id="Eclipse" style="background-color: #343148;"></button>
+		</div>
+		<div id="nappiValikko16" class="row"></div>
+		<div class="värinapit">
+			<button class="colorbutton" onclick="callOikea('#F0EAD6'); show2(this)" id="SweetCorn" style="background-color: #F0EAD6;"></button>
+			<button class="colorbutton" onclick="callOikea('#615550'); show2(this)" id="BrownGranite" style="background-color: #615550;"></button>
+		</div>
+			<h5>Valitsemasi värin nimi:</h5><br>
+			<span class="text-center" id="demo2"></span>
+	</div>
+	</div>
+	<br>
+	<button onclick="callValkoinen('#ffffff')" class="nappi" id="Nollaus">Tyhjennä</button>
+</div>
+	<!--------------------------------------------->
+	<!--Kuva galleria-->
+	<div class="galleria center2" id="galleria" data-aos="fade-down">
+		<!-- Kuvagalleria container -->
+		<div class="slideshow-container">
+			<h2>Galleria</h2>
+			<p style="text-align: center;">*Tässä näet muutamia meidän yrityksen tekemiä projekteja*</p>
+	<!-- Kuvat ja niihin numerot sekä pallot-->
+		<div class="mySlides fade">
+	  	<div class="numbertext">1 / 5</div>
+	 	 <img src="kuvat/Galleria1.jpg" style="width:100%" class="galleria-kuvat">
+		</div>
+  
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 5</div>
+	  <img src="kuvat/Galleria2.jpg" style="width:100%" class="galleria-kuvat">
+	</div>
+  
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 5</div>
+	  <img src="kuvat/Galleria3.jpg" style="width:100%" class="galleria-kuvat">
+	</div>
+
+	<div class="mySlides fade">
+		<div class="numbertext">4 / 5</div>
+		<img src="kuvat/Galleria4.jpg" style="width:100%" class="galleria-kuvat">
+	  </div>
+
+	  <div class="mySlides fade">
+		<div class="numbertext">5 / 5</div>
+		<img src="kuvat/Galleria5.jpg" style="width:100%" class="galleria-kuvat">
+	  </div>
+  
+	<!-- Next and previous buttons -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	  <!-- The dots/circles -->
+	<div style="text-align: center;">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+		<span class="dot" onclick="currentSlide(5)"></span>
+	</div>
+  </div>
+</div>
+	<!--------------------------------------------->
+	<!--Yhteystiedot-->
+		<h2>Yhteystiedot</h2>
+		<p></p>
+	  <div class="yhteystiedot" id="yhteystiedot" data-aos="fade-down">
+		<div>
+			<p>📍: Kotkantie 3, 90100 Oulu</p>
+			<hr class="rounded">
+			<p>☎️: 044-99988899</p>
+			<hr class="rounded">
+			<p>📧: info@kotkantienmaalaus.fi</p>
+		</div>
+		<div>
+			<!--Kartta-->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1686.0861648445068!2d25.510567616961346!3d65.00132968398908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cd5ab648863f%3A0x6a3916ef872dc54b!2sKotkantie%203%2C%2090250%20Oulu!5e0!3m2!1sfi!2sfi!4v1675096191372!5m2!1sfi!2sfi" width="300" height="200" style="border:0;" class="kartta" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	  </div>
+	  <h2>Katso myös meidän somet!</h2>
+	  <div class="somet" data-aos="fade-down">
+			<a href="https://www.youtube.com/" target="blank_">
+				<i class="bi bi-youtube" style="color: black;"></i>
+			</a>
+			<a href="https://www.instagram.com/" target="blank_">
+				<i class="bi bi-instagram" style="color: black;"></i>
+			</a>
+	  </div>
+	<!--------------------------------------------->
+	<!--Footer-->
+	<div class="footer">
+		<p>Copyright© Kotkantien maalaus- ja tapetointi 2023</p>
+		<p>All right reserved</p>
+		<button onclick="topFunction()" id="myBtn" title="Mene alkuun">Alkuun</button>
+	  </div>
+</body>
+	<!--Sciptit kaikille funktioille sekä animaatioille-->
+	<script src="javascript/java.js"></script>
+	<script src="javascript/scroll.js"></script>
+	<script src="javascript/napit.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	  </script>
+</html>

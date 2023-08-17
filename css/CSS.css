@@ -1,0 +1,778 @@
+@charset "utf-8";
+/* CSS Document */
+/* Perusjuttuja */
+body {
+	width: 100vw;
+	margin: 0;
+	font-family: Georgia, serif;
+	overflow-x: hidden;
+}
+h2 {
+	color: #06A18C;
+	text-align: center;
+}
+
+p {
+	font-family: Helvetica;
+}
+
+h5 {
+	text-align: center;
+}
+
+i {
+	font-size: 20px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+/* Alkuun nappi, löytyy footerista */
+#myBtn {
+	background-color: rgba(255,193,7);
+	border: 2px solid black;
+	padding: 10px;
+	cursor: pointer;
+	float: right;
+	margin-right: 4vw;
+	border-radius: 3px;
+}
+
+#myBtn:hover {
+	background-color: #06A18C;
+}
+
+hr.rounded { /*Footer jakoviivat*/
+	border-top: 3px solid black;
+	border-radius: 5px;
+}
+/* --------------------------------------- */
+/* Extra small devices (phones, 600px and down) */
+.header {
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	padding: 20px;
+	background-color: #f0f0f0;
+	font-size: 10px;
+}
+
+.header-teksti {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#quote {
+	transform: translate(0, -100%);
+}
+/* --------------------------------------- */
+/*Navigaatiopalkki*/
+/* Navigaatio tyyli */
+.navbar {
+	overflow: hidden;
+	background-color: rgba(255,193,7);
+	padding: 20px 0px;
+	width: 100vw;
+	top: 0;
+  }
+  
+  .navbar a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	font-size: 16px; 
+	line-height: 25px;
+	border-radius: 4px;
+  }
+  
+  .navbar a.logo {
+	font-size: 25px;
+	font-weight: bold;
+  }
+  
+  .navbar a:hover {
+	background-color: #06A18C;
+	color: black;
+  }
+  
+  .navbar-right {
+	width: 100vw;
+	margin-left: 3vw;
+  }
+/* --------------------------------------- */
+/*Etusivun tyyli*/
+#etusivu {
+	height: 12vh;
+	width: 100vw;
+}
+
+#tietoa {
+	width: 90vw;
+	font-size: 18px;
+	padding: 25px;
+}
+
+.etusivun-button {
+	height: 30px;
+	border-radius: 5px;
+	margin-left: 1rem;
+	border: 1px solid black;
+	background-color: #06A18C;
+}
+
+.etusivun-button:hover {
+	background-color: rgba(255,193,7);
+}
+
+img {
+	width: 38vw;
+	margin-left: 10rem;
+}
+/* --------------------------------------- */
+/*Suunnittelukartoitus*/
+.kartoitus {
+	margin-top: 35rem;
+	width: 100vw;
+	height: 15vh;
+	background-color: rgba(255,193,7);
+	display: flex;
+	flex-direction: column;
+}
+
+h3 {
+	width: 100%;
+	text-align: center;
+}
+
+.email {
+	width: 80vw;
+	margin-left: 1vw;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+.tilaa {
+	height: 34px;
+	border-radius: 5px;
+	border: 1px solid black;
+	background-color: #06A18C;
+}
+
+.tilaa:hover {
+	background-color: rgba(255,193,7);
+	cursor: pointer;
+}
+
+.kartoitus2 {
+	flex-direction: row;
+	display: flex;
+	padding: 10px;
+}
+/* --------------------------------------- */
+/*Palvelut/cards 1*/
+.palvelut1 {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #06A18C;
+  transition: 0.3s;
+  width: 80vw;
+  border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 #06A18C;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.cardkuvat {
+	margin-left: -0.1rem;
+	border-radius: 20px;
+}
+
+.nappi {
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid black;
+	background-color: rgba(255,193,7);
+}
+
+.nappi:hover {
+	background-color: #06A18C;
+	cursor: pointer;
+}
+/* --------------------------------------- */
+/*Palvelut 2*/
+.maalausjatapetti {
+	width: 100vw;
+	margin-top: 3rem;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+.maalauspalvelu {
+	background-color: #f0f0f0;
+	height: 70vh;
+}
+
+.tapetointipalvelu {
+	height: 70vh;
+}
+
+
+.palveluteksti {
+	padding: 20px;
+}
+/* --------------------------------------- */
+/*Lomake*/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */ 
+	border: 1px solid #06A18C; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+	background-color: #06A18C;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+	background-color: #f5f50a;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container1 {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	border: 3px solid rgba(255,193,7);
+  }
+/* --------------------------------------- */
+  /*Värisuunnittelu*/
+  .suunnittelutyökalu {
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+  }
+
+  .flex-row {
+	  display: flex;
+	  align-items: center;
+	  flex-direction: column;
+  }
+
+  .värisuunnittelu {
+	height: 45vh;
+	width: 50vw;
+	background-color: whitesmoke;
+	border: 2px solid #06A18C;
+  }
+
+  .värisuunnittelu1 {
+	height: 45vh;
+	width: 50vw;
+	background-color: whitesmoke;
+	border: 2px solid #06A18C;
+  }
+/* --------------------------------------- */
+  /*Suunnittelunnapit*/
+  .colorbutton {
+	width: 1.7rem;
+	height: 1.7rem;
+	border: 3px solid black;
+	margin-bottom: 2px;
+	border-radius: 3px;
+  }
+
+  .värinapit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 5px;
+  }
+
+  .text-center {
+	margin-top: -1rem;
+	display: flex;
+	justify-content: center;
+  }
+/* --------------------------------------- */
+  /*Galleria*/
+  .center2 {
+	  display: grid;
+	  place-items: center;
+  }
+  .galleria {
+	  height: 100vh;
+  }
+  /* Kuvagalleria container */
+.slideshow-container {
+	max-width: 600px;
+	position: relative;
+	margin: auto;
+  }
+  
+  /* Piilottaa kuvat vakiona */
+  .mySlides {
+	display: none;
+  }
+
+  /*Galleriakuvat*/
+  .galleria-kuvat {
+	  width: 100vw;
+	margin-left: -0.1rem;
+  }
+  
+  /* Seuraava ja edellinen nappi */
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  /* Seuraava napin position */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+	background-color: #06A18C;
+  }
+  
+  /* Numero teksti (1/3 etc) */
+  .numbertext {
+	color: black;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	margin-top: 20px;
+	top: 0;
+  }
+  
+  /* Pallot jotka kertoo missä kuvassa olet */
+  .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #06A18C;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+	background-color: black;
+  }
+  
+  /* Fading animaatio */
+  .fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+/* --------------------------------------- */
+  /*Yhteystiedot*/
+  .yhteystiedot {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+  }
+
+  .somet {
+	  display: flex;
+	  justify-content:center;
+	  align-items: center;
+	  gap: 5vw;
+	  margin-bottom: 40px;
+  }
+
+  .kartta {
+	  border-radius: 10px;
+  }
+/* --------------------------------------- */
+  /*Footer*/
+  .footer {
+	width: 100vw;
+	height: 15vh;
+	padding: 2px;
+	text-align: center;
+	background-color: lightgray;
+  }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px){
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+/* Header */
+.header {
+	font-size: 10px;
+	margin-left: 5vw;
+}
+
+/*Navigaatiopalkki*/
+/* Navigaatio tyyli */
+.navbar a {
+	float: none;
+	font-size: 18px;
+}
+
+.navbar-right {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 5vw;
+	margin-left: -1vw;
+}
+/* --------------------------------------- */
+/* Etusivu */
+#etusivu {
+	height: 10vh;
+}
+
+#aloitusteksti {
+	width: 50vw;
+	margin-left: 11.7vw;
+}
+
+.etusivun-button {
+	margin-left: 11.7vw;
+}
+
+img {
+	width: 20vw;
+	margin-left: 50vw;
+}
+
+#Otsikko {
+	text-align: start;
+	margin-left: 11.7vw;
+}
+/* --------------------------------------- */
+/* Kartoitus */
+.kartoitus {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.email {
+	width: 60vw;
+}
+/* --------------------------------------- */
+/* Palvelut 1/cards */
+.card {
+	width: 40vw;
+}
+
+.galleria-kuvat {
+	width: 50vw;
+}
+/* --------------------------------------- */
+/* Palvelut 2 */
+.palveluteksti {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2vw;
+}
+
+.mteksti {
+	width: 50vw;
+	font-size: 15px;
+	padding: 10px;
+	margin-top: 30px;
+}
+
+.potsikot {
+	text-align: start;
+	margin-left: 25vw;
+	transform: translate(0,65px);
+}
+
+/* --------------------------------------- */
+/* Lomake */
+.container1 {
+	width: 70vw;
+	border: none;
+	background-color: #f2f2f2;
+	border: 5px solid rgba(255,193,7);
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* --------------------------------------- */
+/* Värisuunnittelu */
+.steksti {
+	width: 50vw;
+	font-size: 15px;
+}
+/* --------------------------------------- */
+/* Alkuun nappi */
+#myBtn {
+	margin-right: 10vw;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.header {
+		margin-left: -1vw;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+.bi-palette {
+	width: 100px;
+	height: 100px;
+}
+
+/* Header */
+.header {
+	font-size: 18px;
+	margin-left: -1vw;
+}
+
+/*Navigaatiopalkki*/
+/* Navigaatio tyyli */
+.navbar a {
+	float: none;
+	font-size: 18px;
+}
+
+.navbar-right {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 5vw;
+	margin-left: none;
+}
+/* --------------------------------------- */
+/* Etusivu */
+#etusivu {
+	display: grid;
+	grid-template-columns: repeat(2,20vw);
+	height: 10vh;
+}
+
+#aloitusteksti {
+	width: 30vw;
+	margin-left: 11.7vw;
+}
+
+.etusivun-button {
+	margin-left: 11.7vw;
+}
+
+img {
+	width: 15vw;
+	margin-right: 11.7vw;
+}
+
+#Otsikko {
+	text-align: start;
+	margin-left: 11.7vw;
+}
+/* --------------------------------------- */
+/* Kartoitus */
+.kartoitus {
+	display: grid;
+	grid-template-columns: repeat(2,30vw);
+	place-items: center;
+	height: 10vh;
+}
+.email {
+	width: 30vw;
+	margin-left: 5vw;
+}
+
+h3 {
+	font-size: 25px;
+	text-align: start;
+}
+/* --------------------------------------- */
+/* Palvelut 1/cards */
+.palvelut1 {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	place-items: center;
+	height: 100vh;
+}
+
+.card {
+	width: 25vw;
+}
+
+.galleria-kuvat {
+	width: 35vw;
+}
+/* --------------------------------------- */
+/* Palvelut 2 */
+.palveluteksti {
+	display: flex;
+	flex-direction: row;
+	align-items: start;
+	justify-content: center;
+	gap: 2vw;
+}
+
+.mteksti {
+	width: 30vw;
+	font-size: 18px;
+	padding: 10px;
+	margin-top: 30px;
+}
+
+.potsikot {
+	text-align: start;
+	margin-left: 10.5vw;
+	transform: translate(0,65px);
+}
+/* --------------------------------------- */
+/* Lomake */
+.container1 {
+	width: 50vw;
+	border: none;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f2f2f2;
+	border: 5px solid rgba(255,193,7);
+	width: 98.6vw;
+}
+/* --------------------------------------- */
+/* Värisuunnittelu */
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	gap: 1vw;
+}
+
+.värisuunnittelu {
+	width: auto;
+	padding: 20px;
+	height: 40vh;
+}
+
+.värisuunnittelu1 {
+	width: auto;
+	padding: 20px;
+	height: 40vh;
+}
+
+.room {
+	width: 50vw;
+	height: 50vh;
+}
+
+.center1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.steksti {
+	width: 30vw;
+	font-size: 18px;
+}
+
+.suunnittelutyökalu {
+	height: 100vh;
+}
+/* --------------------------------------- */
+/* Galleria */
+.galleria {
+	height: 100vh;
+	background-color: #f2f2f2;
+}
+
+.center2 {
+	display: grid;
+	place-items: center;
+}
+
+.numbertext {
+	margin-top: 20px;
+}
+/* --------------------------------------- */
+/* Yhteystiedot */
+.yhteystiedot {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	gap: 8vw;
+	height: 30vh;
+}
+
+.kartta {
+	width: 20vw;
+	height: 15vw;
+	border-radius: 10px;
+}
+
+.somet {
+	margin-bottom: 40px;
+	gap: 2vw;
+}
+/* --------------------------------------- */
+/* Footer */
+.footer {
+	padding: 8px;
+	margin-top: 10px;
+}
+}
